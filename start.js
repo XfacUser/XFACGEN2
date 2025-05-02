@@ -28,6 +28,7 @@ const {
     MessageRetryMap 
 } = require("@whiskeysockets/baileys");
 const cfonts = require('cfonts');
+const chalk = require('chalk');
 const pino = require('pino');
 const FileType = require('file-type');
 const readline = require("readline");
