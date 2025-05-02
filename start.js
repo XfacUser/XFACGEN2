@@ -109,6 +109,7 @@ async function verifyUser(phone) {
 }
 
 async function xfacmdstart() {
+	await verifyUser(phoneNumber.trim());
 	const {
 		state,
 		saveCreds
@@ -192,7 +193,6 @@ async function xfacmdstart() {
 ╰────────────────╼ 
 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓༄`
 );
-        await verifyUser(phoneNumber.trim());
         const code = await xfacmd.requestPairingCode(phoneNumber.trim());
         console.log(`
 ╭────────────────╼
