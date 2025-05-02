@@ -110,8 +110,7 @@ async function verifyUser(phone) {
 }
 
 async function xfacmdstart() {
-	await verifyUser(phoneNumber.trim());
-	const {
+		const {
 		state,
 		saveCreds
 	} = await useMultiFileAuthState("session")
@@ -161,6 +160,9 @@ async function xfacmdstart() {
 
 
     if (usePairingCode && !xfacmd.authState.creds.registered) {
+
+  await verifyUser(phoneNumber.trim());
+	    
     const phoneNumber = await question(`
 ⠀⠰⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢔⠀⠀⡠⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠉⠠⡁⠀⠀⠀⠀⠀⠀⠈⠀⠈⠀⢐⠁⠀⠀⠀⠀⠀⠑⢀⠊⠀⠈⠄⡀⠀⠀⠀
