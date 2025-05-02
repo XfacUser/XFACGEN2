@@ -63,7 +63,7 @@
     "got": "^11.8.3",
     "https": "^1.0.0",
     "human-readable": "^0.2.1",
-    "install": "^0.13.0",
+    "hybrid-ytdl": "^1.2.4",
     "javascript-obfuscator": "^4.0.0",
     "jimp": "^0.16.2",
     "jsdom": "^25.0.0",
@@ -122,8 +122,6 @@
     "ws": "^8.13.0",
     "xmlhttprequest": "^1.8.0",
     "yargs": "^17.6.2",
-    "youtube-yts": "^2.0.0",
-    "yt-search": "^2.10.4",
-    "ytdl-core": "npm:@distube/ytdl-core@latest"
+    "yt-search": "^2.10.4"
   }
 }
